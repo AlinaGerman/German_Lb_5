@@ -2,7 +2,7 @@ alert('Поменять местами столбцы, содержащие ми
 var number_of_lines=prompt('Введите количество строк', '');
 var number_of_columns=prompt('Введите количество столбцов', '');
 if (isNaN(Number(number_of_lines)) || isNaN(Number(number_of_columns)) || Number(number_of_lines)%1!=0 || Number(number_of_columns)%1!=0 || number_of_lines=='' || number_of_columns==''){
-    alert('Количество строк и столбцов должны быть натуральными числами');
+    alert('Количество строк и столбцов должны быть целыми числами');
 } else{
     if (Number(number_of_lines)>0 && Number(number_of_lines)<=10 && Number(number_of_columns)>0 && Number(number_of_columns)<=10){
         var matrix=[];
